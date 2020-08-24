@@ -59,9 +59,9 @@ function checkAnswer(answer) {
 
     if (answer == questions[actualQuestion].correct) {
         score++;
-    } else {
+    } /*else {
         console.log(("maaaaal"));
-    }
+    }*/
 
     if (actualQuestion < lastQuestion) {
         actualQuestion++;
