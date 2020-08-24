@@ -34,7 +34,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <!-- Botón empezar juego -->
                 <div class="start-button">
                     <button class="start-btn btn btn-success" id="start-btn">Empezar!</button>
@@ -44,13 +44,17 @@
                     <!-- Pregunta -->
                     <div id="question"></div>
                     <!-- Opciones -->
-                    <div id="choices" class="col-8">
+                    <div id="choices" class="col-9">
                         <div class="choice" id="A" onclick="checkAnswer('A')"></div>
                         <div class="choice" id="B" onclick="checkAnswer('B')"></div>
                     </div>
 
                     <!-- Puntaje / progreso-->
                     <div class="score" id="score"></div>
+                    <div class="start-button">
+                        <button class="reset-btn btn btn-success hide" id="reset-btn">Jugar de nuevo</button>
+                    </div>
+                    <div id="progress"></div>
                 </div>
 
             </div>
