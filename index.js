@@ -4,7 +4,9 @@ const question = document.getElementById("question");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const scoreDiv = document.getElementById("score");
+const perCent = document.getElementById("perCent");
 const resetButton = document.getElementById("reset-btn");
+const fin = document.getElementById("fin");
 
 
 /* Frases */
@@ -57,38 +59,35 @@ function checkAnswer(answer) {
 
     if (answer == questions[actualQuestion].correct) {
         score++;
-        scoreDiv.innerHTML = score + ' / ' + questions.length;
     } else {
         console.log(("maaaaal"));
     }
 
     if (actualQuestion < lastQuestion) {
         actualQuestion++;
+        scoreDiv.innerHTML = actualQuestion + '/' + questions.length;
         renderQuestion();
     } else {
-        question.innerHTML = "<h2>Fin</h2>";
+        scoreDiv.remove();
+        fin.classList.remove('hide');
+        fin.innerHTML = "<h2>Fin</h2>";
+        question.classList.add('hide');
         choiceA.classList.add('hide');
         choiceB.classList.add('hide');
         scorePerCent();
     }
 }
 
-function scoreRender() {
-
-    const scorePerCent = Math.round(100 * score / questions.length);
-
-    scoreDiv.innerHTML = "<h3>Tu puntaje:" + score + "/" + questions.length +"</h3>";
-
-    console.log(score);
-}
-
+/* Puntaje final */
 function scorePerCent() {
     const scorePerCent = Math.round(100 * score / questions.length);
-    scoreDiv.innerHTML = "<h3>" + scorePerCent + " %" + "</h3>";
+    perCent.innerHTML = "<h3 id='perCent'>" + scorePerCent + " %" + "</h3>";
+    //scoreDiv.classList.add('hide');
     resetButton.classList.remove('hide');
 
 }
 
+/* Botón jugar de nuevo */
 resetButton.onclick = function () {
     location.reload();
 }
