@@ -12,7 +12,7 @@
     align-items: center;
   }
 
-  .start-button {
+  .start-button, .reset-button {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,7 +52,7 @@
       border: 1px solid #116052;
       background-color: #116052;
       margin: 20px 0;
-      padding: 15px;
+      padding: 10px;
       border-radius: 5px;
       width: 100%;
       color: white;
@@ -77,13 +77,14 @@
   
   #fin {
     font-family: 'Bree Serif', serif;
+    font-weight: 900;
     font-size: 25px;
     text-align: center;
   }
    #perCent {
     font-family: 'Bree Serif', serif;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 55px;
     color: #116052;
     display: flex;
     justify-content: center;
