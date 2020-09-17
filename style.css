@@ -12,6 +12,18 @@
     align-items: center;
   }
 
+  .img-izquierda {
+    position: absolute;
+    bottom: 110px;
+    left: 2px;
+  }
+
+  .img-derecha {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+  }
+
   .start-button, .reset-button {
       display: flex;
       justify-content: center;
@@ -46,6 +58,29 @@
       padding-left: 15px;
       font-family: 'Bree Serif', serif;
       font-size: 25px;
+  }
+
+  div.choices {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  i.fas {
+    font-size: 35px;
+  }
+
+  i.fas.fa-check {
+    color: #116052;
+  }
+
+  i.fas.fa-times {
+    color: #c9435d;
+  }
+
+  div.icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .choice {
@@ -101,12 +136,6 @@
         font-size: 50px;
     }
 
-    .choice {
-        width: 70%;
-    }
-  }
-
-  @media (min-width: 769px) {
     .choice {
         width: 70%;
     }

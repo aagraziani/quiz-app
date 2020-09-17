@@ -25,15 +25,17 @@
 
 <body>
 
-    <div class="container">
+    <div class="container fluid">
 
         <div class="row">
 
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <!-- Botón empezar juego -->
+                <img class="img-izquierda" src="./img/38EFA6FB-053E-4A52-B913-401CCF046694.png" alt="">
                 <div class="start-button">
                     <button class="start-btn btn btn-success" id="start-btn">Empezar!</button>
                 </div>
+                <img class="img-derecha" src="./img/C5E86D5C-8397-4FE2-A31F-BDC6948DD038.png" alt="">
                 <!-- Container del juego-->
                 <div class="quiz-container hide" id="quiz-container">
                     <!-- Pregunta -->
@@ -41,11 +43,15 @@
                     <!-- Fin del juego -->
                     <div class="fin hide" id="fin"></div>
                     <!-- Opciones -->
-                    <div id="choices" class="col-9">
-                        <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                        <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                    </div>
-
+                    
+                        <div id="choices" class="choices">
+                            <div class="col-9">
+                                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                            </div>
+                            <div class="icon hide col-3" id="icon"></div>
+                        </div>
+                    
                     <!-- Puntaje / progreso-->
                     <div class="perCent" id="perCent"></div>
                     <div class="score" id="score"></div>
