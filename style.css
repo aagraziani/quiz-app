@@ -12,16 +12,8 @@
     align-items: center;
   }
 
-  .img-izquierda {
-    position: absolute;
-    bottom: 110px;
-    left: 2px;
-  }
-
-  .img-derecha {
-    position: absolute;
-    bottom: 2px;
-    right: 2px;
+  div.simulador {
+    width: 80vw;
   }
 
   .start-button, .reset-button {
@@ -63,6 +55,7 @@
   div.choices {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    cursor: pointer;
   }
 
   i.fas {

@@ -156,11 +156,11 @@ function checkAnswer(answer) {
 }
 
 function answerIsCorrect() {
-    icon.innerHTML += '<i class="fas fa-check"></i>';
+    icon.innerHTML = '<i class="fas fa-check"></i>';
 }
 
 function answerIsWrong() {
-    icon.innerHTML += '<i class="fas fa-times"></i>';
+    icon.innerHTML = '<i class="fas fa-times"></i>';
 }
 
 
